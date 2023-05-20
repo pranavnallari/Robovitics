@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>VIT Hackathon</h1>
+    <form action="/submit" method="POST">
+        <div>
+            <label for="name">Enter Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div>
+            <label for="password">Enter Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password" required minlength="6">
+        </div>
+        <div>
+            <label for="phnumber">Enter Phone Number</label>
+            <input type="number" name="phnumber" id="phnumber" placeholder="Enter Your Phone Number" min="1000000000" max="9999999999" required>
+        </div>
+        <div>
+            <label for="campus">Select Your Campus</label>
+            <select name="campus" id="campus">
+                <option value="Vellore" default>VIT-Vellore</option>
+                <option value="Bhopal">VIT-Bhopal</option>
+                <option value="Chennai">VIT-Chennai</option>
+            </select>
+        </div>
+        <div>
+            <h4>Select Number of Team Members</h6>
+            <input type="radio" name="team" class="team" value="checked">
+            <label for="team">1</label>
+            <br>
+            <input type="radio" name="team" class="team">
+            <label for="team">2</label><br>
+            <input type="radio" name="team" class="team">
+            <label for="team">3</label><br>
+            <input type="radio" name="team" class="team">
+            <label for="team">4</label>
+        </div>
+        <div>
+            <label for="description">Enter Team description</label>
+            <br>
+            <textarea name="description" id="description" cols="50" rows="3" placeholder="Provide Additional Informaton Here...."></textarea>
+        </div>
+        <div>
+            <label for="privacy">Agree to the privacy policy</label>
+            <input type="checkbox" name="privacy" id="privacy" required>
+        </div>
+        <div>
+            <label for="tc">Agree to the Terms and Conditions</label>
+            <input type="checkbox" name="tc" id="tc" required>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+</html>
